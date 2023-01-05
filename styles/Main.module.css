@@ -1,0 +1,72 @@
+.wrapper {
+  width: auto;
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg {
+  width: 230px;
+}
+
+.paper,
+.rock,
+.scissors {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.paper img,
+.rock img,
+.scissors img {
+  background: white;
+  border-radius: 100%;
+  padding: 15px 20px;
+}
+
+.paper {
+  top: -40px;
+  left: -40px;
+  background: linear-gradient(
+    to bottom,
+    hsl(230, 89%, 62%),
+    hsl(230, 89%, 65%)
+  );
+}
+
+.scissors {
+  top: -40px;
+  right: -40px;
+  background: linear-gradient(to bottom, hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+}
+
+.rock {
+  bottom: -30px;
+  background: linear-gradient(
+    to bottom,
+    hsl(349, 71%, 52%),
+    hsl(349, 70%, 56%)
+  );
+}
+
+.rock img {
+  padding: 18px 20px;
+}
+
+@media (width >= 700px) {
+  .wrapper {
+    scale: 1.1;
+  }
+
+  .bg {
+    width: 300px;
+  }
+}

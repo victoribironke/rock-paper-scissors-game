@@ -1,0 +1,45 @@
+.wrapper {
+  border: 3px solid var(--outline);
+  border-radius: 10px;
+  width: 90%;
+  height: auto;
+  padding: 15px 15px 10px 20px;
+  display: flex;
+  max-width: 500px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.img {
+  width: 100px;
+}
+
+.scoreDiv {
+  width: 80px;
+  height: 80px;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 13px;
+  color: var(--score-text);
+  margin: 0;
+}
+
+.score {
+  font-size: 40px;
+  color: var(--dark-text);
+  font-weight: 700;
+}
+
+@media (width >= 700px) {
+  .wrapper {
+    scale: 1.2;
+  }
+}
